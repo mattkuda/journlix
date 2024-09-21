@@ -1,22 +1,17 @@
-import React from 'react';
-import Header from '../components/Header';
-import HeroSection from '../components/HeroSection';
-import FeaturesSection from '../components/FeaturesSection';
-import PricingSection from '../components/PricingSection';
-import Footer from '../components/Footer';
+import Header from "../components/Header"
+import Footer from "../components/Footer"
+import HeroSection from "../components/HeroSection"
+import FeaturesSection from "../components/FeaturesSection"
+import PricingSection from "../components/PricingSection"
 
-const Home: React.FC = () => {
+export default function JournalPromptLanding() {
     return (
-        <div>
+        <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-violet-800 text-gray-100">
             <Header />
-            <main>
-                <HeroSection />
-                <FeaturesSection />
-                <PricingSection />
-            </main>
+            <HeroSection />
+            <FeaturesSection />
+            <PricingSection />
             <Footer />
         </div>
-    );
-};
-
-export default Home;
+    )
+}
