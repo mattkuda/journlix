@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetTrigger, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet"
 
 export const Header = () => (
-    <header className="bg-gray-800 bg-opacity-50 backdrop-blur-lg">
+    <header className="bg-gray-800 bg-opacity-50 backdrop-blur-lg sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
             <div className="flex items-center space-x-2">
                 <BookOpen className="h-6 w-6 text-purple-400" />
