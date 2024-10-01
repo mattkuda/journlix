@@ -54,21 +54,21 @@ export const HeroSection = () => {
             <h1 className="text-5xl font-bold mb-6">Unlock Your Inner Wisdom</h1>
             <p className="text-xl mb-8">Experience the power of AI-guided journaling with Journlix</p>
             <div className="flex justify-center space-x-4 mb-12">
-                <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full text-lg">
+                <Button className="py-6 bg-purple-600 hover:bg-purple-700 text-white px-8 rounded-full text-xl">
                     Get Started Free
                 </Button>
-                <Button onClick={scrollToSample} variant="outline" className="text-white border-white hover:bg-white hover:text-purple-900 px-8 py-3 rounded-full text-lg">
+                <Button onClick={scrollToSample} variant="outline" className="text-white border-white hover:bg-white hover:text-purple-900 px-8 py-6 rounded-full text-xl">
                     Try a Sample
                 </Button>
             </div>
             <div ref={samplePromptRef} className="max-w-2xl mx-auto space-y-6 bg-gray-800 bg-opacity-80 backdrop-blur-lg rounded-3xl p-8 shadow-2xl">
                 <Select onValueChange={(value: string) => setSelectedTheme(value)}>
-                    <SelectTrigger className="bg-gray-700 text-gray-100 border-gray-600 rounded-xl">
+                    <SelectTrigger className="bg-gray-700 text-gray-100 border-gray-600 rounded-xl text-lg py-6">
                         <SelectValue placeholder="Select a journal theme" />
                     </SelectTrigger>
                     <SelectContent className="bg-gray-700 text-gray-100 border-gray-600">
                         {themes.map((theme) => (
-                            <SelectItem key={theme.value} value={theme.value} className="focus:bg-purple-700">
+                            <SelectItem key={theme.value} value={theme.value} className="focus:bg-purple-700 text-lg py-2">
                                 {theme.label}
                             </SelectItem>
                         ))}
@@ -127,7 +127,6 @@ export const HeroSection = () => {
                     </div>
                 )}
             </div>
-
         </section>
     )
 }
