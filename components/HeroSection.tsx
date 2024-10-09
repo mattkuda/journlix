@@ -113,7 +113,7 @@ export const HeroSection = () => {
                                 placeholder="Type your response here..."
                                 className="w-full mt-4 bg-gray-600 text-white border-gray-500"
                             />
-                            {currentFollowUpIndex >= currentPrompt.followUps.length - 1 &&
+                            {currentFollowUpIndex < currentPrompt.followUps.length - 1 &&
                                 <div className="flex justify-end mt-4">
                                     <Button
                                         onClick={showNextFollowUp}
