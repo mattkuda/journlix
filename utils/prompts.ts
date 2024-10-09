@@ -56,5 +56,41 @@ export const prompts: PromptTheme = {
             ],
         },
     ],
-    // Add more themes and prompts as needed
+    "gratitude": [
+        {
+            question: "What are you grateful for today?",
+            followUps: [
+                "How can you express your gratitude to those who have helped you?",
+                "How does feeling grateful make you feel?",
+                "Can you think of a time when feeling grateful made a difficult situation easier?",
+            ],
+        },
+        {
+            question: "What is one thing you couldn't live without?",
+            followUps: [
+                "Why is this so important to you?",
+                "How does it make you feel to have this item with you?",
+                "Can you think of a time when having this item made a difficult situation easier?",
+            ],
+        },
+    ],
+    "personal-growth": [
+        {
+            question: "What is one thing you're proud of from this past week?",
+            followUps: [
+                "Why does this achievement feel significant to you?",
+                "How can you build on this success in the coming week?",
+                "Who else might appreciate or benefit from hearing about this accomplishment?",
+            ],
+        },
+        {
+            question: "What is one thing you've been neglecting in your personal life?",
+            followUps: [
+                "Why have you been neglecting this?",
+                "Why is this important to you?",
+                "How can you make time for this in your schedule?",
+                "Who else might benefit from your attention in this area?",
+            ],
+        },
+    ],
 };
